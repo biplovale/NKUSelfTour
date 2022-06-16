@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #navigation-container {
+        position: relative;
+        background-color: #FAC35B;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        padding: 5px 15px;
+        opacity: 0.7;
+    }
+
+    img {
+        width: 5.5%;
+    }
+
+    li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+
+    .list ul li  {
+        display: inline-block;
+        margin-left: 0px;
+        margin-right:8%;
+        margin-top: 10px;
+        margin-bottom:10px;
+    }
+    .borders {
+        border-radius: 5px 5px 5px 5px;
+        -moz-border-radius: 5px 5px 5px 5px;
+        -webkit-border-radius: 5px 5px 5px 5px;
+        border: 1px solid #000000;
+        background-color: rgba(1355,255,000,0.4);/* adjust the div transparency here*/
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>create</title>
+</head>
+<body>
+
+<div class="navigation-bar">
+
+    <div id="navigation-container">
+
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Northern_Kentucky_University_seal.svg/1200px-Northern_Kentucky_University_seal.svg.png">
+        <h1 style="padding-top: 12px; padding-left: 200px">NKU Voice-Guided Tour</h1>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Progress</a></li>
+            <li><a href="login.html">Log Out</a></li>
+        </ul>
+    </div>
+</div>
+<div>
+    <h1 style="padding-top: 100px"><center>Select your interested buildings to start the tour.</center></h1>
+    <div class="container col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 bg-primary ">
+        <div class="row list">
+            <!--<span class="label-new">-->
+            <div>
+            <ul class="ngc">
+                <li class="col-xs-2 borders">
+                    <input type="checkbox" id="building8" name="building8" value="Library">
+                    <label for="building8">Library</label>
+                </li>
+                <li class="col-xs-2 borders new-select">
+                    <input type="checkbox" id="building1" name="building1" value="Griffin">
+                    <label for="building1">Griffin Hall</label>
+                </li>
+                <li class="col-xs-2 borders new-select">
+                    <input type="checkbox" id="building2" name="building2" value="Student">
+                    <label for="building1">Student Union</label><br>
+                </li>
+                <li class="col-xs-2 borders new-select">
+                    <input type="checkbox" id="building3" name="building3" value="University">
+                    <label for="building1">University Center</label><br>
+                </li>
+                <li class="col-xs-2 borders new-select">
+                    <input type="checkbox" id="building4" name="building4" value="Founders">
+                    <label for="building1">Founders Hall</label><br>
+                </li>
+                <li class="col-xs-2 borders new-select">
+                    <input type="checkbox" id="building6" name="building6" value="Science">
+                    <label for="building1">Science Center</label><br>
+                </li>
+                <li class="col-xs-2 borders new-select">
+                    <input type="checkbox" id="building7" name="building7" value="Landrum">
+                    <label for="building1">Landrum Hall</label><br>
+                </li>
+                </ul>
+                </div>
+
+            <div>
+                <ul>
+                    <li class="col-xs-2 borders new-select">
+                        <input type="checkbox" id="building9" name="building9" value="Health">
+                        <label for="building9">Regents Hall</label><br>
+                    </li>
+                <li class="col-xs-2 borders new-select">
+                    <input type="checkbox" id="building5" name="building5" value="Health">
+                    <label for="building1">Health and Innovation Center</label><br>
+                </li>
+                <li class="col-xs-2 borders new-select">
+                    <input type="checkbox" id="building10" name="building10" value="Campus">
+                    <label for="building1">NKU Campus Recreation</label><br>
+                </li>
+                <li class="col-xs-2 borders new-select">
+                    <input type="checkbox" id="building11" name="building11" value="Chase">
+                    <label for="building11">Chase College of Law</label><br>
+                </li>
+                <li class="col-xs-2 borders new-select">
+                    <input type="checkbox" id="building12" name="building12" value="Sota">
+                    <label for="building1">SOTA College of Arts</label><br>
+                </li>
+                <li class="col-xs-2 borders new-select">
+                    <input type="checkbox" id="building13" name="building13" value="Haile">
+                    <label for="building1">Haile College of Business</label><br>
+                </li>
+                <li class="col-xs-2 borders new-select">
+                    <input type="checkbox" id="building14" name="building14" value="Math">
+                    <label for="building1">Math and Psychology Building</label></br></br>
+                </li>
+            </ul>
+                </div></br>
+            <center><button type="button" class="btn btn-warning">Start Tour</button></center></br>
+            <center><a href="detail.html"><button type="button" class="btn btn-warning">Building Details</button></a></center>
+
+        </div>
+    </div>
+
+</body>
+</html>
+
+
