@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>detail</title>
+</head>
+
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #navigation-container {
+        position: relative;
+        background-color: #FAC35B;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        list-style-type: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+        padding: 5px 15px;
+        opacity: 0.7;
+    }
+
+    img {
+        width: 5.5%;
+    }
+
+    li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .feature-box{
+        width: 70%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        padding-right:190px;
+        padding-top: 230px;
+
+    }
+
+    .features{
+        flex-basis: 50%;
+        background-color: black;
+        border: 3px solid white;
+        padding: 20px;
+        color: white;
+        font-family: 'Work Sans', sans-serif;
+    }
+
+    .features ul{
+        padding: 3px;
+    }
+
+    .features-img{
+        flex-basis: 50%;
+        margin: 0;
+        position: relative;
+        max-width: 220px;
+        height: 220px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        top:25%;
+    }
+
+    .features-img img{
+        width: 75%;
+        border-radius: 10px;
+        opacity: 1;
+    }
+
+    .pics {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .mySlides{
+        opacity: 0;
+    }
+
+    .container{
+        padding-top: 2%;
+    }
+</style>
+
+<body>
+<div class="navigation-bar">
+
+    <div id="navigation-container">
+
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Northern_Kentucky_University_seal.svg/1200px-Northern_Kentucky_University_seal.svg.png">
+        <h1 style="padding-top: 12px; padding-left: 200px">NKU Voice-Guided Tour</h1>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Progress</a></li>
+            <li><a href="login.html">Log Out</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="feature-box">
+    <div class="features">
+        <ul>
+            <li><p>Griffin Hall is the embodiment of everything digital, providing a unique resource to the NKU campus and the region.
+                It is a unique and inviting state-of-the-art facility where a new generation of professionals are building our region's
+                information economy.</br></br> Purposely designed to be a space for artists, musicians, doctors, entrepreneurs, and scientists,
+                Griffin Hall will supply new workforce talent, technically skilled and broadly prepared, to the region.</p></li><br>
+
+        </ul>
+    </div>
+    <div class="features-img">
+        <div class="pics">
+            <img class="mySlides" src="http://4.bp.blogspot.com/-EG49gxLplIA/UjMQkhav79I/AAAAAAAAARY/vfs8BgYlclM/s640/_MKF8023.jpg" style="width:180%">
+        </div>
+    </div>
+
+</body>
+</html>
