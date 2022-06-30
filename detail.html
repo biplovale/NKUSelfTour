@@ -1,140 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="UTF-8">
     <title>detail</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
 </head>
 
-
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-    }
-
-    #navigation-container {
-        position: relative;
-        background-color: #FAC35B;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    ul {
-        display: flex;
-        flex-direction: row;
-        list-style-type: none;
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-        font-size: 16px;
-        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-        padding: 5px 15px;
-        opacity: 0.7;
-    }
-
-    img {
-        width: 5.5%;
-    }
-
-    li {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-    .feature-box{
-        width: 70%;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        text-align: center;
-        padding-right:190px;
-        padding-top: 230px;
-
-    }
-
-    .features{
-        flex-basis: 50%;
-        background-color: black;
-        border: 3px solid white;
-        padding: 20px;
-        color: white;
-        font-family: 'Work Sans', sans-serif;
-    }
-
-    .features ul{
-        padding: 3px;
-    }
-
-    .features-img{
-        flex-basis: 50%;
-        margin: 0;
-        position: relative;
-        max-width: 220px;
-        height: 220px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        top:25%;
-    }
-
-    .features-img img{
-        width: 75%;
-        border-radius: 10px;
-        opacity: 1;
-    }
-
-    .pics {
-        position: relative;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    .mySlides{
-        opacity: 0;
-    }
-
-    .container{
-        padding-top: 2%;
-    }
-</style>
 
 <body>
 <div class="navigation-bar">
 
-    <div id="navigation-container">
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Northern_Kentucky_University_seal.svg/1200px-Northern_Kentucky_University_seal.svg.png" >
+                NKU Voice-Guided Tour
+            </a>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="openLogin">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="openSignup">Progress</a>
+                </li>
+                <li class="nav-item">
+                    <a class="openLogin">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html">Log Out</a>
+                </li>
+            </ul>
 
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Northern_Kentucky_University_seal.svg/1200px-Northern_Kentucky_University_seal.svg.png">
-        <h1 style="padding-top: 12px; padding-left: 200px">NKU Voice-Guided Tour</h1>
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Progress</a></li>
-            <li><a href="login.html">Log Out</a></li>
-        </ul>
-    </div>
-</div>
-
-<div class="feature-box">
-    <div class="features">
-        <ul>
-            <li><p>Griffin Hall is the embodiment of everything digital, providing a unique resource to the NKU campus and the region.
-                It is a unique and inviting state-of-the-art facility where a new generation of professionals are building our region's
-                information economy.</br></br> Purposely designed to be a space for artists, musicians, doctors, entrepreneurs, and scientists,
-                Griffin Hall will supply new workforce talent, technically skilled and broadly prepared, to the region.</p></li><br>
-
-        </ul>
-    </div>
-    <div class="features-img">
-        <div class="pics">
-            <img class="mySlides" src="http://4.bp.blogspot.com/-EG49gxLplIA/UjMQkhav79I/AAAAAAAAARY/vfs8BgYlclM/s640/_MKF8023.jpg" style="width:180%">
         </div>
+    </nav>
+</div>
+<br />
+<br />
+<br />
+<br />
+
+    <div class="container">
+        <!-- POI -->
+        <div class="product-content product-wrap clearfix product-deatil">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12">
+                    <div class="product-image">
+                        <img class="prod-img" src="https://inside.nku.edu/content/inside/campusplanning/building/support/steely/_jcr_content/par/columncontrol/column-2/textimage/image.img.jpg/1210765687.jpg"  ;><hr />
+                        <img class="prod-img" src="https://pbs.twimg.com/media/DHWpKKXW0AAZQ8m.jpg"  ;>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-md-offset-1 col-sm-12 col-xs-12">
+                    <h2 class="name">
+                        W. Frank Steely Library
+                        <h6>Location: 1 Louie B Nunn Dr, Newport, KY 41076</h6>
+                        <i class="fa fa-star fa-2x text-primary"></i>
+                        <i class="fa fa-star fa-2x text-primary"></i>
+                        <i class="fa fa-star fa-2x text-primary"></i>
+                        <i class="fa fa-star fa-2x text-primary"></i>
+                        <i class="fa fa-star fa-2x text-muted"></i>
+                        <span class="fa fa-2x"><h5>Rating</h5></span>
+                    </h2>
+                    <hr />
+
+                    <div class="certified">
+                        <ul>
+                            <li>
+                                <a >Open Hours<span>6:00am - 11:00pm</span></a>
+                            </li>
+                            <li>
+                                <a>Open Days<span>Monday - Friday</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <hr />
+                    <div class="description description-tabs">
+                        <div id="myTabContent" class="tab-content">
+                                <p>
+                                    The W. Frank Steely Library is a major educational resource for NKU and the surrounding community.
+                                    Originally completed in 1975, the building underwent a major expansion in 1994-95. It currently has 141,665 gross square feet on five floors. Called "the center jewel of the campus," Steely Library has received considerable
+                                    publicity due to its unique architecture and interior design. The library's attractive loggia, located at the plaza level under
+                                    the striking 45-degree sloping glass wall, and its coffee shop are a popular campus destination. The office of the Dean of Arts
+                                    and Sciences is located on the fourth floor of the library and the Information Technology Solutions Center.
+                                    </br>
+                                    </br>
+                                    Steely Library is named in honor of the first president of Northern Kentucky University, Dr. W. Frank Steely, who served as president
+                                    from 1969 to 1975.
+                                </p>
+                            <hr />
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                <a class="btn btn-success btn-lg btn-warning">Add to Tour </a>
+                            </div>
+                            <div class="col-sm-12 col-md-6 col-lg-6">
+                                <div class="btn-group pull-right">
+                                    <button class="btn btn-white btn-default"><i class="fa fa-star"></i> Add to Bucketlist</button>
+                                    <button class="btn btn-white btn-default"><i class="fa fa-envelope"></i> Contact</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end POI -->
     </div>
+
+
 
 </body>
 </html>
+
