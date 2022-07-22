@@ -1,0 +1,455 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color:  #D7C6AC;
+}
+
+.bg{
+    background-image:url("https://www.goodyclancy.com/wp-content/uploads/2014/05/nku_griffin-hall-exterior-night_goody-clancy-900x615.jpg");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+
+.create{
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    margin: 0;
+    padding: 0;
+    background-color:  #D7C6AC;
+}
+
+:root{
+    --font1: 'Heebo', sans-serif;
+    --font2: 'Fira Sans Extra Condensed', sans-serif;
+    --font3: 'Roboto', sans-serif
+}
+
+
+.container .card-body{
+    margin-top: -20px;
+    margin-bottom: -15px;
+}
+
+
+.card-title{
+    font-size: 18.7px;
+}
+
+h2{
+    font-weight: 800
+}
+
+
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .12), 0 4px 8px rgba(0, 0, 0, .06)
+}
+
+.btn-warning{
+    background: none #f7810a;
+    color: #ffffff;
+    fill: #ffffff;
+    border: none;
+    text-decoration: none;
+    outline: 0;
+    box-shadow: -1px 6px 19px rgba(247, 129, 10, 0.25);
+    border-radius: 100px;
+}
+
+.btn-warning:hover{
+    background: none #ff962b;
+    color: #ffffff;
+    box-shadow: -1px 6px 13px rgba(255, 150, 43, 0.35)
+}
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    padding: 5px 15px;
+    opacity: 0.7;
+}
+
+.feature-box{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-right:190px;
+    padding-top: 230px;
+}
+
+.features{
+    flex-basis: 50%;
+    background-color: black;
+    border: 3px solid white;
+    padding: 20px;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.features ul{
+    padding: 3px;
+}
+
+.features-img{
+    flex-basis: 50%;
+    margin: 0;
+    position: relative;
+    max-width: 220px;
+    height: 220px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    top:25%;
+}
+
+.features-img img{
+    width: 75%;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.pics {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.nku {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-family:'Unlock', cursive ;
+    font-size: 23px;
+}
+
+.hero-image {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQE7lmmCoPps-l4SpFfQ8dMF1S9EM315xr0AQ&usqp=CAU");
+    background-color: #cccccc;
+    height: 870px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.new-hero-image h1{
+    font-family: 'Unlock', cursive;
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+.card{
+    width:250px;
+    height: 290px;
+
+}
+
+.card-img-top{
+    width:250px;
+    height: 180px;
+}
+
+.row-two{
+    display: flex;
+    padding: 20px;
+    padding-top: 70px;
+    justify-content: space-evenly;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    font-family:'Unlock', cursive ;
+    font-size: 50px;
+}
+
+img {
+    width: 5.5%;
+}
+
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    align-items: center;
+}
+
+/* The popup form - hidden by default */
+.form-popupp {
+    display: none;
+
+
+
+}
+
+/* Add styles to the form container */
+.form-container {
+    justify-content: center;
+    max-width: 300px;
+    padding-left: 20px;
+    padding-right: 90px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
+
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+    width: 250px;
+    padding: 10px;
+    margin: 10px 0 20px 0;
+    border: 10px black;
+    background: #f1f1f0;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/login button */
+.form-container .btn {
+    background-color: #FAC35B;
+    color: black;
+    padding: 10px 10px;
+    margin-left: 30px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.9;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: black;
+    color: white;
+
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 2;
+}
+
+
+.product-content {
+    border: 1px solid #dfe5e9;
+    margin-bottom: 20px;
+    margin-top: 12px;
+    background: #fff
+}
+
+
+.product-content .description {
+    font-size: 12.5px;
+    line-height: 20px;
+    padding: 10px 14px 16px 19px;
+    background: #fff
+}
+
+
+.product-deatil {
+        padding: 40px 30px 50px
+    }
+
+
+.product-deatil .name {
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+.prod-img{
+    width: 100%;
+}
+
+
+.product-deatil .fa-2x {
+    font-size: 16px!important
+}
+
+.product-deatil .fa-2x>h5 {
+    font-size: 12px;
+    margin: 0
+}
+
+
+.product-deatil .certified ul {
+    padding-left: 0;
+}
+
+.product-deatil .certified ul li {
+    display: inline-block;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 13px 19px
+}
+
+.product-deatil .certified ul li a span {
+    display: block;
+    color: #21c2f8;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: center
+}
+
+
+
+
+.contact input {
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #232434;
+    font-size: 16px;
+    padding: 30px;
+    font-family: 'poppins', sans-serif;
+
+}
+
+.contact textarea {
+    background: #fff;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    color: #232434;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    font-family: 'poppins', sans-serif;
+    padding-left: 30px;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.contact input:focus {
+    background: #fff;
+    border: 1px solid #fff;
+    color: #232434;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0 none;
+}
+
+.contact textarea:focus {
+    background: #fff;
+    border: 1px solid #fff;
+    color: #232434;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: 0 none;
+}
+
+.form-control::placeholder {
+    color: #232434;
+
+}
+
+.btn-contact-bg {
+    border-radius: 30px;
+    color: #fff;
+    padding: 15px 27px;
+    text-transform: capitalize;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    background: #f7810a;
+    font-family: 'poppins', sans-serif;
+    cursor: pointer;
+
+}
+
+
+/*START ADDRESS*/
+
+.single_address {
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding-left: 40px;
+}
+
+
+.single_address i {
+    background: #f6f6f6;
+    color: #f7810a;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    float: left;
+    margin-right: 14px;
+    font-size: 22px;
+    -webkit-box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    -webkit-transition: all 0.3s ease 0s;
+    -o-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.single_address:hover i {
+    background: #f7810a;
+    color: #fff;
+}
+
+.single_address h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.single_address p {
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+
+.map-container{
+    overflow:hidden;
+    padding-bottom:50%;
+    position:relative;
+    height:0;
+}
+.map-container iframe{
+    left:53.8%;
+    top:5%;
+    height:70%;
+    width:25%;
+    position:absolute;
+}
+
+.call{
+    display: block;
+}
+
+
+
+
+

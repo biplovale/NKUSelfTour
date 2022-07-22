@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forms</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand bg-light navbar-light">
+    <div class="container">
+        <a class="navbar-brand">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Northern_Kentucky_University_seal.svg/1200px-Northern_Kentucky_University_seal.svg.png" >
+            NKU Voice-Guided Tour
+        </a>
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a href="create.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="forms.html">Forms</a>
+                </li>
+                <li class="nav-item">
+                    <a href="contact.html">Contact </a>
+                </li>
+                <li class="nav-item">
+                    <a href="index.html">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<br />
+
+<div><h1 style="text-align: center; font-family: 'Comfortaa';"> Add Your Point of Interest</h1></div><hr /><br />
+
+<div class="container">
+    <form>
+        <!-- 2 column grid layout with text inputs for the first and last names -->
+        <div class="row mb-4">
+            <div class="col">
+                <div class="form-outline">
+                    <label class="form-label" for="form6Example1">Name of Point of Interest</label>
+                    <input type="text" id="form6Example1" class="form-control" />
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-outline">
+                    <label class="form-label" for="form6Example2">Location of Point of Interest</label>
+                    <input type="text" id="form6Example2" class="form-control" >
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Text input -->
+        <div class="row mb-4">
+            <div class="col">
+                <div class="form-outline">
+                    <label class="form-label" for="form6Example1">Open Days</label>
+                    <input type="text" id="form6Example1" class="form-control" />
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-outline">
+                    <label class="form-label" for="form6Example2">Open Hours</label>
+                    <input type="text" id="form6Example2" class="form-control" >
+
+                </div>
+            </div>
+        </div>
+        <!-- Email input -->
+        <div class="row mb-4">
+            <div class="col">
+                <div class="form-outline">
+                    <label class="form-label" for="form6Example1">Phone Number</label>
+                    <input type="text" id="form6Example1" class="form-control" />
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="form-outline">
+                    <label class="form-label" for="form6Example2">Image Link</label>
+                    <input type="text" id="form6Example2" class="form-control" >
+
+                </div>
+            </div>
+        </div>
+        <!-- Message input -->
+        <div class="form-outline mb-4">
+            <label class="form-label" for="form6Example7">Point of Interest Description</label>
+            <textarea class="form-control" id="form6Example7" rows="4"></textarea>
+
+        </div>
+
+        <!-- Submit button -->
+        <div class="col-md-12 text-center">
+            <button type="submit" value="Send message" name="submit" id="submitButton" class="btn btn-contact-bg" title="Submit Your Message!">Submit</button>
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

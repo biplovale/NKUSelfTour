@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+
+<head>
+  <meta charset="UTF-8">
+  <title>detail</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand bg-light navbar-light">
+  <div class="container">
+    <a class="navbar-brand">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Northern_Kentucky_University_seal.svg/1200px-Northern_Kentucky_University_seal.svg.png" >
+      NKU Voice-Guided Tour
+    </a>
+    <div class="collapse navbar-collapse" id="navmenu">
+      <ul class="navbar-nav ">
+        <li class="nav-item">
+          <a href="create.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="forms.html">Forms</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html">Contact </a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br />
+
+
+<!--
+<div class="navigation-bar">
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Northern_Kentucky_University_seal.svg/1200px-Northern_Kentucky_University_seal.svg.png" >
+        NKU Voice-Guided Tour
+      </a>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a href="">About</a>
+        </li>
+        <li class="nav-item">
+          <a href="">Forms</a>
+        </li>
+        <li class="nav-item">
+          <a href="contact.html">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a href="index.html">Log Out</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+</div>
+<br />
+--->
+
+
+<div><h1 style="text-align: center; font-family: 'Comfortaa';"> Contact Us</h1></div><hr /><br />
+
+  <div class="container">
+    <div class="row mx-5">
+      <div class="col-md-7">
+        <div class="contact ">
+          <form class="form" name="enq" method="post" action="contact.php" onsubmit="return validation();">
+            <div class="row">
+              <div class="form-group col-md-6">
+                <input type="text" name="name" class="form-control" placeholder="Name" required="required">
+              </div>
+              <div class="form-group col-md-6">
+                <input type="email" name="email" class="form-control" placeholder="Email" required="required">
+              </div>
+              <div class="form-group col-md-12">
+                <input type="text" name="subject" class="form-control" placeholder="Subject" required="required">
+              </div>
+              <div class="form-group col-md-12">
+                <textarea rows="6" name="message" class="form-control" placeholder="Your Message" required="required"></textarea>
+              </div>
+              <div class="col-md-12 text-center">
+                <button type="submit" value="Send message" name="submit" id="submitButton" class="btn btn-contact-bg" title="Submit Your Message!">Submit</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div><!--- END COL -->
+      <div class="col-lg-5">
+        <div class="single_address">
+          <i class="fa fa-map-marker"></i>
+          <h4>Our Address</h4>
+          <p>1 Louie B Nunn Dr, Highland Heights</p>
+        </div>
+        <div class="single_address">
+          <i class="fa fa-envelope"></i>
+          <h4>Send your message</h4>
+          <p>Info@example.com</p>
+        </div>
+        <div class="single_address">
+          <i class="fa fa-phone"></i>
+          <h4>Call us on</h4>
+          <p>(+1) 123 999 0000</p>
+        </div>
+        <div class="single_address">
+          <i class="fa fa-clock-o"></i>
+          <h4>Work Time</h4>
+          <p>Mon - Fri: 10:00am - 16:00pm <br>
+
+        </div>
+      </div><!--- END COL -->
+    </div><!--- END ROW -->
+  </div><!--- END CONTAINER -->
+
+
+</body>
+</html>
+

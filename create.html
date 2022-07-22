@@ -1,157 +1,335 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-    }
 
-    #navigation-container {
-        position: relative;
-        background-color: #FAC35B;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-
-    ul {
-        display: flex;
-        flex-direction: row;
-        list-style-type: none;
-    }
-
-    a {
-        text-decoration: none;
-        color: black;
-        font-size: 16px;
-        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-        padding: 5px 15px;
-        opacity: 0.7;
-    }
-
-    img {
-        width: 5.5%;
-    }
-
-    li {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-    }
-
-
-    .list ul li  {
-        display: inline-block;
-        margin-left: 0px;
-        margin-right:8%;
-        margin-top: 10px;
-        margin-bottom:10px;
-    }
-    .borders {
-        border-radius: 5px 5px 5px 5px;
-        -moz-border-radius: 5px 5px 5px 5px;
-        -webkit-border-radius: 5px 5px 5px 5px;
-        border: 1px solid #000000;
-        background-color: rgba(1355,255,000,0.4);/* adjust the div transparency here*/
-    }
-</style>
 <head>
-    <meta charset="UTF-8">
-    <title>create</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <title>NKUtour</title>
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="style.css">
+
 </head>
-<body>
 
-<div class="navigation-bar">
 
-    <div id="navigation-container">
+<body class="create">
 
-        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Northern_Kentucky_University_seal.svg/1200px-Northern_Kentucky_University_seal.svg.png">
-        <h1 style="padding-top: 12px; padding-left: 200px">NKU Voice-Guided Tour</h1>
-        <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Progress</a></li>
-            <li><a href="login.html">Log Out</a></li>
-        </ul>
-    </div>
-</div>
-<div>
-    <h1 style="padding-top: 100px"><center>Select your interested buildings to start the tour.</center></h1>
-    <div class="container col-xs-12 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1 col-lg-10 col-lg-offset-1 bg-primary ">
-        <div class="row list">
-            <!--<span class="label-new">-->
-            <div>
-            <ul class="ngc">
-                <li class="col-xs-2 borders">
-                    <input type="checkbox" id="building8" name="building8" value="Library">
-                    <label for="building8">Library</label>
+<nav class="navbar navbar-expand bg-light navbar-light">
+    <div class="container">
+        <a class="navbar-brand">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Northern_Kentucky_University_seal.svg/1200px-Northern_Kentucky_University_seal.svg.png" >
+            NKU Voice-Guided Tour
+        </a>
+        <div class="collapse navbar-collapse" id="navmenu">
+            <ul class="navbar-nav ">
+                <li class="nav-item">
+                    <a href="create.html">Home</a>
                 </li>
-                <li class="col-xs-2 borders new-select">
-                    <input type="checkbox" id="building1" name="building1" value="Griffin">
-                    <label for="building1">Griffin Hall</label>
+                <li class="nav-item">
+                    <a href="forms.html">Forms</a>
                 </li>
-                <li class="col-xs-2 borders new-select">
-                    <input type="checkbox" id="building2" name="building2" value="Student">
-                    <label for="building1">Student Union</label><br>
+                <li class="nav-item">
+                    <a href="contact.html">Contact </a>
                 </li>
-                <li class="col-xs-2 borders new-select">
-                    <input type="checkbox" id="building3" name="building3" value="University">
-                    <label for="building1">University Center</label><br>
-                </li>
-                <li class="col-xs-2 borders new-select">
-                    <input type="checkbox" id="building4" name="building4" value="Founders">
-                    <label for="building1">Founders Hall</label><br>
-                </li>
-                <li class="col-xs-2 borders new-select">
-                    <input type="checkbox" id="building6" name="building6" value="Science">
-                    <label for="building1">Science Center</label><br>
-                </li>
-                <li class="col-xs-2 borders new-select">
-                    <input type="checkbox" id="building7" name="building7" value="Landrum">
-                    <label for="building1">Landrum Hall</label><br>
-                </li>
-                </ul>
-                </div>
-
-            <div>
-                <ul>
-                    <li class="col-xs-2 borders new-select">
-                        <input type="checkbox" id="building9" name="building9" value="Health">
-                        <label for="building9">Regents Hall</label><br>
-                    </li>
-                <li class="col-xs-2 borders new-select">
-                    <input type="checkbox" id="building5" name="building5" value="Health">
-                    <label for="building1">Health and Innovation Center</label><br>
-                </li>
-                <li class="col-xs-2 borders new-select">
-                    <input type="checkbox" id="building10" name="building10" value="Campus">
-                    <label for="building1">NKU Campus Recreation</label><br>
-                </li>
-                <li class="col-xs-2 borders new-select">
-                    <input type="checkbox" id="building11" name="building11" value="Chase">
-                    <label for="building11">Chase College of Law</label><br>
-                </li>
-                <li class="col-xs-2 borders new-select">
-                    <input type="checkbox" id="building12" name="building12" value="Sota">
-                    <label for="building1">SOTA College of Arts</label><br>
-                </li>
-                <li class="col-xs-2 borders new-select">
-                    <input type="checkbox" id="building13" name="building13" value="Haile">
-                    <label for="building1">Haile College of Business</label><br>
-                </li>
-                <li class="col-xs-2 borders new-select">
-                    <input type="checkbox" id="building14" name="building14" value="Math">
-                    <label for="building1">Math and Psychology Building</label></br></br>
+                <li class="nav-item">
+                    <a href="index.html">Logout</a>
                 </li>
             </ul>
-                </div></br>
-            <center><button type="button" class="btn btn-warning">Start Tour</button></center></br>
-            <center><a href="detail.html"><button type="button" class="btn btn-warning">Building Details</button></a></center>
-
         </div>
     </div>
+</nav>
+<br />
+
+<div><h1 style="text-align: center; font-family: 'Comfortaa';"> Select your Point of Interests</h1></div><hr /><br />
+
+<div class="container">
+        <div class="row">
+            <div class=" col-lg-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://res.cloudinary.com/scalefunder/image/upload/v1639416200/Northern_Kentucky_University/omfugt5enk2c5pbdnsde.jpg" class="card-img-top bg-light mb-3 img-responsive" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">Library</h2>
+                        <div class="text-center my-4">
+                            <a href="#" class="btn btn-warning">Add To Tour</a>
+                        </div>
+                        <div class="text-center my-4">
+                            <a href="detail.html" class="btn btn-warning">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="https://www.uniquevenues.com/sites/uniquevenues.com/files/imagecache/venue_flexslider_2018/venues/slideshow/_MKF8023.jpg" class="card-img-top bg-light mb-3 img-responsive" alt="...">
+                        <div class="card-body">
+                            <h2 class="card-title">Griffin Hall</h2>
+                            <div class="text-center my-4">
+                                <a href="#" class="btn btn-warning">Add To Tour</a>
+                            </div>
+                            <div class="text-center my-4">
+                                <a href="detail.html" class="btn btn-warning">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+            <div class="col-12 col-lg-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://media.bizj.us/view/img/11903562/nku-campus-2020*1200xx1280-720-0-0.jpg" class="card-img-top bg-light mb-3 img-responsive" class="card-img-top bg-light mb-3 img-responsive" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">Student Union</h2>
+                        <div class="text-center my-4">
+                            <a href="#" class="btn btn-warning">Add To Tour</a>
+                        </div>
+                        <div class="text-center my-4">
+                            <a href="detail.html" class="btn btn-warning">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12 col-lg-3">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://educationsnapshots.com/wp-content/uploads/sites/4/2020/10/northern-kentucky-university-health-innovation-center-and-founders-hall-renovation-700x420.jpg" class="card-img-top bg-light mb-3 img-responsive" alt="...">
+                    <div class="card-body">
+                        <h2 class="card-title">Founders Hall/HIC</h2>
+                        <div class="text-center my-4">
+                            <a href="#" class="btn btn-warning">Add To Tour</a>
+                        </div>
+                        <div class="text-center my-4">
+                            <a href="detail.html" class="btn btn-warning">View Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    <!---
+      <div class="container-fluid bg-transparent my-4 p-3" >
+          <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+
+          </div>
+      </div>
+      <div class="container-fluid bg-transparent my-4 p-3" >
+          <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+              <div class="col">
+                  <div class="card h-100 shadow-sm">
+                      <img src="https://media.bizj.us/view/img/11903562/nku-campus-2020*1200xx1280-720-0-0.jpg" class="card-img-top bg-light mb-3 img-responsive" alt="...">
+                      <div class="card-body">
+                          <h2 class="card-title">Student Union</h2>
+                          <div class="text-center my-4">
+                              <a href="#" class="btn btn-warning">Add To Tour</a>
+                          </div>
+                          <div class="text-center my-4">
+                              <a href="detail.html" class="btn btn-warning">View Details</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container-fluid bg-transparent my-4 p-3" >
+          <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+              <div class="col">
+                  <div class="card h-100 shadow-sm">
+                      <img src="https://educationsnapshots.com/wp-content/uploads/sites/4/2020/10/northern-kentucky-university-health-innovation-center-and-founders-hall-renovation-700x420.jpg" class="card-img-top bg-light mb-3 img-responsive" alt="...">
+                      <div class="card-body">
+                          <h2 class="card-title">Founders Hall (HIC)</h2>
+                          <div class="text-center my-4">
+                              <a href="#" class="btn btn-warning">Add To Tour</a>
+                          </div>
+                          <div class="text-center my-4">
+                              <a href="detail.html" class="btn btn-warning">View Details</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+
+
+  <div class="container">
+      <div class="container-fluid bg-transparent my-4 p-3" >
+          <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+              <div class="col">
+                  <div class="card h-100 shadow-sm">
+                      <img src="https://www.nku.edu/content/www/_jcr_content/par/columncontrol_185926359/column-1/columncontrol/column-1/slideshow/image_1106588587.img.jpg/1053180169.jpg" class="card-img-top bg-light mb-3 img-responsive" alt="...">
+                      <div class="card-body">
+                          <h2 class="card-title">SOTA</h2>
+                          <div class="text-center my-4">
+                              <a href="#" class="btn btn-warning">Add To Tour</a>
+                          </div>
+                          <div class="text-center my-4">
+                              <a href="detail.html" class="btn btn-warning">View Details</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container-fluid bg-transparent my-4 p-3" >
+          <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+              <div class="col">
+                  <div class="card h-100 shadow-sm">
+                      <img src="https://www.oclc.org/content/dam/oclc/member-stories/images/features/nku-law_feature.jpg" class="card-img-top bg-light mb-3 img-responsive" alt="...">
+                      <div class="card-body">
+                          <h2 class="card-title">Chase Law College</h2>
+                          <div class="text-center my-4">
+                              <a href="#" class="btn btn-warning">Add To Tour</a>
+                          </div>
+                          <div class="text-center my-4">
+                              <a href="detail.html" class="btn btn-warning">View Details</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container-fluid bg-transparent my-4 p-3" >
+          <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+              <div class="col">
+                  <div class="card h-100 shadow-sm">
+                      <img src="http://www.nkytribune.com/wp-content/uploads/2015/09/nku.png" class="card-img-top bg-light mb-3 img-responsive" alt="...">
+                      <div class="card-body">
+                          <h2 class="card-title">Science Center</h2>
+                          <div class="text-center my-4">
+                              <a href="#" class="btn btn-warning">Add To Tour</a>
+                          </div>
+                          <div class="text-center my-4">
+                              <a href="detail.html" class="btn btn-warning">View Details</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container-fluid bg-transparent my-4 p-3" >
+          <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+              <div class="col">
+                  <div class="card h-100 shadow-sm">
+                      <img src="https://inside.nku.edu/content/inside/nkumagazine/2016/december/landrum-1976/_jcr_content/par/colctl/column-2/textimage_431494737/image.img.jpg/1460322625.jpg" class="card-img-top bg-light mb-3 img-responsive" alt="...">
+                      <div class="card-body">
+                          <h2 class="card-title">Landrum Hall</h2>
+                          <div class="text-center my-4">
+                              <a href="#" class="btn btn-warning">Add To Tour</a>
+                          </div>
+                          <div class="text-center my-4">
+                              <a href="detail.html" class="btn btn-warning">View Details</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="container">
+      <div class="container-fluid bg-transparent my-4 p-3" >
+          <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+              <div class="col">
+                  <div class="card h-100 shadow-sm">
+                      <img src="https://inside.nku.edu/content/inside/careerservices/employers/visitcampus/_jcr_content/par/columncontrol/column-2/image.img.jpg/1483693156.jpg" class="card-img-top bg-light mb-3 img-responsive" alt="...">
+                      <div class="card-body">
+                          <h2 class="card-title">University Center</h2>
+                          <div class="text-center my-4">
+                              <a href="#" class="btn btn-warning">Add To Tour</a>
+                          </div>
+                          <div class="text-center my-4">
+                              <a href="detail.html" class="btn btn-warning">View Details</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container-fluid bg-transparent my-4 p-3" >
+          <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+              <div class="col">
+                  <div class="card h-100 shadow-sm">
+                      <img src="https://inside.nku.edu/content/inside/artsci/departments/math/centers/bcc/contact/_jcr_content/par/columncontrol/column-2/columncontrol/column-1/image.img.jpg/1735362212.jpg" class="card-img-top bg-light mb-3 img-responsive" alt="...">
+                      <div class="card-body">
+                          <h2 class="card-title">MEP Center</h2>
+                          <div class="text-center my-4">
+                              <a href="#" class="btn btn-warning">Add To Tour</a>
+                          </div>
+                          <div class="text-center my-4">
+                              <a href="detail.html" class="btn btn-warning">View Details</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container-fluid bg-transparent my-4 p-3" >
+          <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+              <div class="col">
+                  <div class="card h-100 shadow-sm">
+                      <img src="https://map.nku.edu/images/IMG_2016050908165_DETE.jpg" class="card-img-top bg-light mb-3 img-responsive" alt="...">
+                      <div class="card-body">
+                          <h2 class="card-title">Lucas Administration</h2>
+                          <div class="text-center my-4">
+                              <a href="#" class="btn btn-warning">Add To Tour</a>
+                          </div>
+                          <div class="text-center my-4">
+                              <a href="detail.html" class="btn btn-warning">View Details</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="container-fluid bg-transparent my-4 p-3" >
+          <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+              <div class="col">
+                  <div class="card h-100 shadow-sm">
+                      <img src="https://www.pepperconstruction.com/sites/default/files/images/NKU6_0.jpg" class="card-img-top bg-light mb-3 img-responsive" alt="...">
+                      <div class="card-body">
+                          <h2 class="card-title">Campus Recreation</h2>
+                          <div class="text-center my-4">
+                              <a href="#" class="btn btn-warning">Add To Tour</a>
+                          </div>
+                          <div class="text-center my-4">
+                              <a href="detail.html" class="btn btn-warning">View Details</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="container">
+      <div class="container-fluid bg-transparent my-4 p-3" >
+          <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+              <div class="col">
+                  <div class="card h-100 shadow-sm">
+                      <img src="https://www.nkytribune.com/wp-content/uploads/2019/08/NKU-COB-shot.png" class="card-img-top bg-light mb-3 img-responsive" alt="...">
+                      <div class="card-body">
+                          <h2 class="card-title">Business Center</h2>
+                          <div class="text-center my-4">
+                              <a href="#" class="btn btn-warning">Add To Tour</a>
+                          </div>
+                          <div class="text-center my-4">
+                              <a href="detail.html" class="btn btn-warning">View Details</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  --->
 
 </body>
 </html>
+
 
 
